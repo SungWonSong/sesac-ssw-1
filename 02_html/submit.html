@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit-form</title>
+</head>
+<body>
+    <form>
+    <h5>설문조사</h5><br>
+    이름: <input type="text"><br><br>
+    이메일 :<input type="email" placeholder="love@example.com"><br>
+
+    <h5>나이</h5>
+        <input type="radio" name="age"> 10대 
+        <input type="radio" name="age"> 20대 
+        <input type="radio" name="age"> 30대 
+        <input type="radio" name="age"> 40대 
+        <input type="radio" name="age"> 50대
+        <input type="radio" name="age"> 60대 이상<br>
+
+    <h5> 원하는 강의(복수응답가능합니다.)</h5>
+        <input type="checkbox" name="lecture" value="html"> html
+        <input type="checkbox" name="lecture" value="javascript"> javascript
+        <input type="checkbox" name="lecture" value="css"> css<br><br> 
+
+        <textarea placeholder="하고 싶은 말을 써주세요" cols="65" rows="15"></textarea>
+        <button type="submit">제출</button>
+
+    </form>
+</body>
+</html>
