@@ -1,0 +1,23 @@
+/* 웹 폰트(web-font) */
+/* 
+    - 구글 웹 폰트, 눈누 웹 폰트 ... 
+    - 모든 브라우저에서 보는 폰트를 통일
+    - 폰트를 다운로드 하는 것이 아니라 link 태그에 걸려 있는 주소에서 
+    폰트를 가져오는 방식
+    - 보통 기본 폰트는 body 태그에 작성.
+*/
+@font-face {
+    font-family: 'Ownglyph_ryuttung-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Black Han Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Ownglyph_ryuttung-Rg";
+}

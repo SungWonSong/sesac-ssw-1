@@ -38,14 +38,73 @@ input:focus {
     color: red;
 }
 
-.h1 :hover {
-    color: red;
+/* 요소 상황에 따른 가상 클래스 선택자 */
+.zoo > * {
+    background-color: green;
+    color: white;
 }
 
-.a :active {
-    background-color: blue;
+/* 
+    #1 first-child : 요소가 첫번째 요소라면, 첫번째가 아닌걸 지정하면 첫번째가 아니기에 인식이 안됨
+*/
+.zoo > :first-child {
+    background-color: red;
 }
 
-.input :focus {
+/* 
+    #2 last-child : 요소가 마지막 요소라면, 위와 동일하게 
+*/
+
+.zoo > :last-child {
+    background-color: black;
+}
+
+/* 
+    #3 nth-child : 요소가 n번째 요소라면 
+*/
+.zoo > :nth-child(2) {
+    background-color: aqua;
+}
+
+/* 
+    #4 not(xyz) : xyz가 아닌 요소 선택
+*/
+
+.zoo > *:not(div) {
+    background-color: pink;
+}
+
+.stripes > div{
+    background-color: navy;
+    color: white;
+}
+
+.stripes > :nth-child(2),
+.stripes > :nth-child(6),
+.stripes > :nth-child(10){
+    background-color: yellow;
+    color: black;
+}
+
+/* 가상요소 : before, after 
+    - html 문서의 특정 부분을 스타일링하기 위해 사용
+    - 실제로 html 문서에 존재하지 않는 부분이지만 css를 통해 스타일 적용이 가능.
+
+    Q) 가상클래스 : 가상요소 :: 차이 ?
+    A) CSS 사양이 발전하면서 가상클래스와 가상 요소를 명확하게 구분할 필요성이 생김.
+    가상클래스 - 문서의 기존 요소 상태를 나타냄.
+    가상 요소 - 문서의 특정 부분을 생성하여 스타일링함. 
+    그렇기에 구분하기 위해서 :: 로 표기하는 새로운 표기법을 도입.
+*/
+
+[disabled] {
+    background-color : red
+}
+
+[placeholder="이름"]{
     background-color: orange;
+}
+
+input:not([placeholder]){
+    background-color: blue;
 }
