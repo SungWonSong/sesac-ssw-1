@@ -1,0 +1,101 @@
+/* 
+    overflow
+    - 컨텐츠가 너무 크거나 / 길어서 크기보다 넘치게 된다면?
+
+    - visible  : 벗어난 부분 표시
+    - hidden : 벗어난 부분 숨김
+    - scroll : 스크롤 생성.
+    - auto : 넘친다면 스크롤, 안넘치면 스크롤 x 
+
+
+*/
+
+/* overflow - x : 수평 방향으로 넘칠 때 처리 */
+/* overflow - y : 수직 방향으로 넘칠 때 처리 */
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: skyblue;
+
+    /* overflow : visible; */
+    /* overflow : hidden; */
+    /* overflow : scroll */
+    /* overflow : auto */
+}
+
+/* -------------------------------------------------- */
+
+.sesac {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top : 100px;
+    left: 100px;
+}
+
+.img {
+    /* 크기의 단위로 %를 사용
+    : 부모 요소의 n% 차지 
+    */
+
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+    /* 
+    transform 속성
+    - 요소의 모양, 크기, 위치 등을 변경하는데 사용한다.
+    */
+
+        /* 
+            #1. shew()
+            - 원하는 각도만큼 객체를 기울임.
+            - x,y축 나누어 속성 부여 가능
+                -skewX(x_deg)
+                -skewY(y_deg)
+            - x,y 동시 사용 원하는 경우
+                -skew(x_deg, y_deg
+        */
+
+    /* transform: skewX(30deg);
+       transform: skewY(-30deg);
+       transform: skew(30deg, 30deg);
+
+    */
+
+        /* 
+           #2. scale()
+           - 크기 조절 (확대, 축소)
+           - 1보다 큼 : 확대
+           - 0 ~ 1 : 축소 = 0.n만큼 확대
+               
+        */
+
+
+        /* 
+           #3. rotate()
+           - 회전
+           - 주어진 각도만큼 회전
+           - rotate() : x축을 기준으로 회전
+           - rotate() : y축을 기준으로 회전
+           - rotate() : 시계방향으로 회전 (deg > 0)
+        */
+
+        /* 
+            #4. translate()
+            - 이동
+            - translateX() : x축을 기준으로 이동.
+            - translateY() : y축을 기준으로 이동.
+            - translate() : x,y축을 기준으로 이동.
+
+        */
+
+        /* 
+            transition 속성 
+            - css 요소의 속성값이 변화 할 때 일정 시간동안 부드럽게 변화가 일어나도록 설정해준다.
+            - transform 속성과 함께 자주 쓰인다.
+        */
+}

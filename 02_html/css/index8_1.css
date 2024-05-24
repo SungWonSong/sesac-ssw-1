@@ -1,0 +1,38 @@
+.div {
+    width: 1000px;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+    
+
+.div1,.div2,.div3 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transform: rotateY(30deg);
+    transform: skewY(30deg);
+    
+
+}
+
+.div1:hover {
+    transform: rotateY(0);
+    transform: skewY(0);
+    z-index: 10;
+    transition-duration: 1s;
+}
+.div2:hover {
+    transform: rotateY(0);
+    transform: skewY(0);
+    z-index: 10;
+    transition-duration: 1s;
+}
+.div3:hover {
+    transform: rotateY(0);
+    transform: skewY(0);
+    z-index: 10;
+    transition-duration: 1s;
+}

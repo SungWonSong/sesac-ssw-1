@@ -21,3 +21,107 @@ body {
 h1 {
     font-family: "Ownglyph_ryuttung-Rg";
 }
+
+div {
+    /* 색상 */
+    /* 글자색 */
+    color : red;
+
+    /* 배경색 */
+    background-color: pink;
+
+    /* 배경 그라데이션 */
+    /* background */
+    background: linear-gradient(blue,pink);
+    background: linear-gradient(to right, blue, pink);
+    background : linear-gradient(230deg, royalblue);
+
+    /* --------------------------------------------------- */
+
+    /* font 크기 */
+    font-size: 50px;
+    font-size: 16px;  /* 기본 폰트 크기는 16px */
+
+    /* font 굵기 - lighter, noraml, bold, bolder */
+    font-weight: 100;
+
+    /* font 모양 - normal, italic, oblique */
+    font-style: oblique 70deg;
+
+    /* 정렬 - center, left, right, justify(양쪽 정렬) */
+    text-align: center;
+
+    /* 글자선 - underline, line-through, overline, none */
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+
+    /* 줄 높이 - px, 1.2(default) */
+    line-height: 4;
+
+    /*  -------------------------------------------------------- */
+
+    /* 크기 - min, max는 반응형으로 생각하면 된다(중요_)*/
+    /* min-width, min-height, ,max-width, max-height */
+    width: 600px;
+    height: 600px;
+
+    /* 테두리 */
+    border-style: solid; /* 테두리 종류 */ 
+    border-width: 4px; /* 테두리 두께  */
+    border-color: limegreen; 
+
+    /* 테두리 단축 프로퍼티  */
+    /* border : [border-width] [border-style] [border-color] */
+
+    /* 한쪽 테두리만 : top, bottom, right, left */
+    /* border-top, border-bottom, border-right, border-left */
+    border-top: 5px solid red;
+
+    /* 모서리 둥글기 */
+    /* border-radius:5%; */
+
+    /* 4가지 방향다 다르게 주기 */
+    border-radius: 10px 20px 0 30%;
+
+
+    /* 4방향을 각각 따로 적용할 때 쓰는 방법 */
+    /* 여백 */
+    /* margin-top, margin-bottom, margin-left, margin-right */
+
+    /*  동시에 한번에 적용할 때 */
+    /* margin : 50px; */
+    /* padding: 20px; */
+
+    /* 방향별 속성 단축 형식 - 상 우, 하, 좌 10px 적용, 두개를 적어주게 되면은 상하 / 좌우로 나뉘어 진다.*/
+    margin: 10px;
+
+    
+} 
+
+.backgroundI {
+    background-color: coral;
+    background-image: none;
+    /* 이미지 없음 */
+    background-repeat: repeat; 
+    /* default값 */
+
+    /* 배경이미지 - 위치 */
+    background-position: top;
+    background-position: center;
+
+    /* 배경이미지 - 크기 (auto : 실제크기) */
+    background-size: auto;
+    background-size: 35em;
+
+    /* 비율 유지 - 요소의 더 넓은 너비에 맞춤 */
+    background-size: cover;
+
+    /* 비율 유지 - 요소의 더 짧은 너비에 맞춤 */
+    background-size: contain;
+
+    
+    /* 배경 이미지 스크롤 특성 */
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-attachment: local;
+}
